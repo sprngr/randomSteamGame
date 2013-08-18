@@ -25,7 +25,8 @@ a simple button to click rather than copy in code each time; it kind of evolved 
 - Highlights and scrolls to the game it has just selected for you.
 - Adds a handy launch button to start the game right away.
 - Bookmarklet calls latest code from here so you never have to worry about updating what you have.
+- Excludes any apps not of type "game" as well as Steam for Linux (Not sure why it's listed as a game)
 
 ###Future Updates
 
-Unknown at this time, too busy playing games.
+Unknown at this time, too busy playing games. Feel free to give any suggestions.
