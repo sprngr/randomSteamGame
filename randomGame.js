@@ -32,6 +32,13 @@
 		document.querySelectorAll('table#table-apps tbody tr')[rand].className += "selectedGame";
 
 		var appID = document.querySelector('.selectedGame td:first-child a').text;
+
+		//Rerolls if it hits Steam for Linux
+		if(appID == "221410"){
+			chooseRandomGame();
+			return;
+		}
+		
 		var launchBtn = document.createElement('a');
 		launchBtn.href= "steam://run/"+appID;
 		launchBtn.appendChild(document.createTextNode("Launch Game"));
