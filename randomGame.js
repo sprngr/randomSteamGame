@@ -1,15 +1,4 @@
-javascript:(function(){
-	var reg = /^(http:\/\/steamdb.info\/calculator\/\?player=[A-z])/g;
-	if(!reg.test(window.location.href)){
-		var steamID=prompt("Please enter your SteamID or profile name, then remember to click this bookmarklet again after the redirect!","");
-		if(steamID != null && steamID != ""){
-			window.location = "http://steamdb.info/calculator/?player="+steamID;
-			return false;
-		} else {
-			window.location = "http://steamdb.info/calculator/";
-			return false;
-		}
-	}
+function chooseRandomGame(){
 	if (document.querySelector('.selectedGame')){
 		var launchBtn = document.querySelector('.launchButton');
 		document.querySelector('.selectedGame td:nth-child(3)').removeChild(launchBtn);
@@ -39,4 +28,4 @@ javascript:(function(){
 	document.querySelector('.selectedGame td:nth-child(3) a').className += "launchButton";
 
 	document.querySelector('.selectedGame').scrollIntoView(true);
-})()
+}
