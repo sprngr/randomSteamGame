@@ -12,9 +12,7 @@
 	var cleanup = function() {
 		var launchBtn = document.querySelector(".launchButton");
 		document.querySelector(".selectedGame td:nth-child(3)").removeChild(launchBtn);
-		document.querySelector(".selectedGame").className =
-		document.querySelector(".selectedGame").className.replace
-		( /(?:^|\s)selectedGame(?!\S)/g , "" );
+		document.querySelector(".selectedGame").className = document.querySelector(".selectedGame").className.replace( /(?:^|\s)selectedGame(?!\S)/g , "" );
 	}
 
 	//Most of the magic
@@ -30,7 +28,7 @@
 		var rand = Math.floor(Math.random() * appListCount);
 
 		document.querySelectorAll("table#table-apps tbody tr")[rand].className += "selectedGame";
-		if(document.querySelector(".selectedGame td:nth-child(2)").text != "Game"){
+		if(document.querySelector(".selectedGame td:nth-child(2)").innerHTML != "Game"){
 			//Rerolls when it isn"t of app type game
 			chooseRandomGame();
 		} else {
