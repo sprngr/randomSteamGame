@@ -11,7 +11,9 @@
 	//Essentially reset the table
 	var cleanup = function() {
 		var launchBtn = document.querySelector(".launchButton");
-		document.querySelector(".selectedGame td:nth-child(3)").removeChild(launchBtn);
+		if(document.querySelector(".launchButton")){
+			document.querySelector(".selectedGame td:nth-child(3)").removeChild(launchBtn);
+		}
 		document.querySelector(".selectedGame").className = document.querySelector(".selectedGame").className.replace( /(?:^|\s)selectedGame(?!\S)/g , "" );
 	}
 
