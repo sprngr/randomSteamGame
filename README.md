@@ -12,6 +12,7 @@ javascript:(function(){var reg=/^(http:\/\/steamdb.info\/calculator\/\?player=[A
 
 Once the bookmark has been made, either view your profile under steamdb.info/calculator/ or click the bookmark you just made & follow the instructions.
 
+Note: this will not work if steamdb.info cannot see your profile (set to private).
 
 ###Why was this made?
 
