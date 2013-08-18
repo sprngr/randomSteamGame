@@ -1,4 +1,4 @@
-javascript:(function(){var reg = /^(http:\/\/steamdb.info\/calculator\/\?player=[A-z])/g;
+javascript:(function(){var reg = /^(http:\/\/steamdb.info\/calculator\/\?player=[A-z0-9])/g;
 	if(!reg.test(window.location.href)){
 		var steamID=prompt("Please enter your SteamID or profile name, then remember to click this bookmarklet again after the redirect!","");
 		if(steamID != null && steamID != ""){
@@ -14,5 +14,8 @@ javascript:(function(){var reg = /^(http:\/\/steamdb.info\/calculator\/\?player=
 		script.src = "https://raw.github.com/sprngr/randomSteamGame/master/randomGame.js";
 		document.head.appendChild(script);
 	}
-	chooseRandomGame();
+
+	if(typeof chooseRandomGame == 'function'){
+		chooseRandomGame();
+	}
 })()
