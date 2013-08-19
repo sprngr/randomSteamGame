@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Random Steam Game Bookmarklet by sprngr</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Random Steam Game Bookmarklet</h1>
+        <p>Bookmarklet to select a random steam game from your profile on steamdb.info</p>
+
+        <p class="view"><a href="https://github.com/sprngr/randomSteamGame">View the Project on GitHub <small>sprngr/randomSteamGame</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/sprngr/randomSteamGame/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/sprngr/randomSteamGame/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/sprngr/randomSteamGame">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="random-steam-game-bookmarklet" class="anchor" href="#random-steam-game-bookmarklet"><span class="octicon octicon-link"></span></a>Random Steam Game Bookmarklet</h1>
+
+<p><em>Lets you select a random game to play from your game list (or anyone's) via steamdb.info</em></p>
+
+<h3>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h3>
+
+<p>Copy the contents of either bookmarklet.min.js or the code below into the URL field for a new bookmark in your browser.</p>
+
+<p><strong>Bookmarklet code</strong></p>
+
+<div class="highlight"><pre><span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="kd">var</span> <span class="nx">reg</span><span class="o">=</span><span class="sr">/^(http:\/\/steamdb.info\/calculator\/\?player=[A-z0-9])/g</span><span class="p">;</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">reg</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)){</span><span class="kd">var</span> <span class="nx">steamID</span><span class="o">=</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"Please enter your SteamID, CommunityID, or Profile URL; If you do not know any of these just leave it blank and hit OK, then follow the instructions on the page to find a profile.\n\nRemember to click this bookmarklet again once you get to a profile on steamdb.info!"</span><span class="p">,</span><span class="s2">""</span><span class="p">);</span><span class="k">if</span><span class="p">(</span><span class="nx">steamID</span><span class="o">!=</span><span class="kc">null</span><span class="o">&amp;&amp;</span><span class="nx">steamID</span><span class="o">!=</span><span class="s2">""</span><span class="p">){</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="o">=</span><span class="s2">"http://steamdb.info/calculator/?player="</span><span class="o">+</span><span class="nx">steamID</span><span class="p">;</span><span class="k">return</span> <span class="kc">false</span><span class="p">}</span><span class="k">else</span><span class="p">{</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="o">=</span><span class="s2">"http://steamdb.info/calculator/"</span><span class="p">;</span><span class="k">return</span> <span class="kc">false</span><span class="p">}}</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"[src='https://raw.github.com/sprngr/randomSteamGame/master/randomGame.js']"</span><span class="p">)){</span><span class="kd">var</span> <span class="nx">script</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"script"</span><span class="p">);</span><span class="nx">script</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="s2">"https://raw.github.com/sprngr/randomSteamGame/master/randomGame.js"</span><span class="p">;</span><span class="nb">document</span><span class="p">.</span><span class="nx">head</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">script</span><span class="p">)}</span><span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">chooseRandomGame</span><span class="o">==</span><span class="s2">"function"</span><span class="p">){</span><span class="nx">chooseRandomGame</span><span class="p">()}})();</span>
+</pre></div>
+
+<p>Once the bookmark has been made, either view your profile under steamdb.info/calculator/ or click the bookmark you just made &amp; follow the instructions.</p>
+
+<p>Note: this will not work if steamdb.info cannot see your profile (set to private).</p>
+
+<h3>
+<a name="why-was-this-made" class="anchor" href="#why-was-this-made"><span class="octicon octicon-link"></span></a>Why was this made?</h3>
+
+<p>I have way too many games on Steam and in an attempt to play new ones, I would run a random number gen and find the game in my list. 
+That got too tedious so I started manipulating my page on steamdb via the javascript console. At that point I figured why not make it just
+a simple button to click rather than copy in code each time; it kind of evolved from there.</p>
+
+<h3>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h3>
+
+<ul>
+<li>Lets you enter a steamID if you are too lazy to go to the page before clicking the bookmark.</li>
+<li>Highlights and scrolls to the game it has just selected for you.</li>
+<li>Adds a handy launch button to start the game right away.</li>
+<li>Bookmarklet calls latest code from here so you never have to worry about updating what you have.</li>
+<li>Excludes any apps not of type "game" as well as Steam for Linux (Not sure why it's listed as a game)</li>
+</ul><h3>
+<a name="future-updates" class="anchor" href="#future-updates"><span class="octicon octicon-link"></span></a>Future Updates</h3>
+
+<p>Unknown at this time, too busy playing games. Feel free to give any suggestions.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/sprngr">sprngr</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
