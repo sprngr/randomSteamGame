@@ -1,6 +1,6 @@
 javascript:(function(){var reg = /^(http:\/\/steamdb.info\/calculator\/\?player=[A-z0-9])/g;
 	if(!reg.test(window.location.href)){
-		var steamID=prompt("Please enter your SteamID, CommunityID, or Profile URL; If you do not know any of these just leave it blank and hit OK, then follow the instructions on the page. Remember to click this bookmarklet again once you get to a profile on steamdb.info!","");
+		var steamID=prompt("Please enter your SteamID, CommunityID, or Profile URL; If you do not know any of these just leave it blank and hit OK, then follow the instructions on the page to find a profile.\n\nRemember to click this bookmarklet again once you get to a profile on steamdb.info!","");
 		if(steamID != null && steamID != ""){
 			window.location = "http://steamdb.info/calculator/?player="+steamID;
 			return false;
