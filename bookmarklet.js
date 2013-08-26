@@ -9,7 +9,7 @@ javascript:(function(){var reg = /^(http:\/\/steamdb.info\/calculator\/\?player=
 			return false;
 		}
 	}
-	if(typeof chooseRandomGame != 'function')){
+	if(typeof chooseRandomGame != 'function'){
 		var script = document.createElement("script");
 		script.src = "https://raw.github.com/sprngr/randomSteamGame/master/randomGame.js";
 		document.head.appendChild(script);
