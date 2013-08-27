@@ -253,3 +253,17 @@ footer {
     color:#444;
   }
 }
+
+#bookmarklet {
+  cursor: hand;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  display: block;
+  width: 500px;
+  height: 500px;
+  background: url(http://i.imgur.com/t3HSPJw.jpg);
+  color: rgba(0,0,0,0);
+  float: left;
+  position: relative;
+}
