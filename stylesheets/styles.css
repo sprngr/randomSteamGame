@@ -260,10 +260,9 @@ footer {
   cursor: -moz-grab;
   cursor: -webkit-grab;
   display: block;
-  width: 500px;
-  height: 500px;
-  background: url(http://i.imgur.com/t3HSPJw.jpg);
+  width: 300px;
+  height: 225px;
+  background: url(http://i.imgur.com/4zBJf2k.jpg);
   color: rgba(0,0,0,0);
-  float: left;
-  position: relative;
+  text-position: center;
 }
