@@ -2,7 +2,12 @@
 
 *Lets you select a random game to play from your game list (or anyone's) via steamdb.info*
 
-###How to use
+###Automatic Setup
+Go to [sprngr.github.io/randomSteamGame](http://sprngr.github.io/randomSteamGame) and follow the instructions there.
+
+###Manual Setup
+If the automatic setup was too easy for you, follow these steps.
+
 Copy the contents of either bookmarklet.min.js or the code below into the URL field for a new bookmark in your browser.
 
 **Bookmarklet code**
