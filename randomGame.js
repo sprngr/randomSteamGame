@@ -29,7 +29,7 @@
 		var appListCount = appList.length;
 		var rand = Math.floor(Math.random() * appListCount);
 
-		document.querySelectorAll("table#table-apps tbody tr")[rand].className += " selectedGame";
+		document.querySelectorAll("table#table-apps tbody tr")[rand].className += "selectedGame";
 		if(document.querySelector(".selectedGame td:nth-child(2)").innerHTML != "Game"){
 			//Rerolls when it isn"t of app type game
 			chooseRandomGame();
