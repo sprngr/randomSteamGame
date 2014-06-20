@@ -1,7 +1,7 @@
 (function(){
 	//Runs once to establish styling
 	var setupCSS = function() {
-		var css = ".selectedGame td,.selectedGame td:hover{color:#fff !important;background:#84bc3c !important;font-weight:bold}.launchButton{float:right;display:inline-block;position:relative;overflow:visible;width:auto;padding:3px 10px;border-bottom:1px solid rgba(0,0,0,0.25);background:#222;color:#fff !important;font-size:13px;font-weight:bold;line-height:1;text-decoration:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.25);-moz-box-shadow:0 1px 3px rgba(0,0,0,0.25);box-shadow:0 1px 3px rgba(0,0,0,0.25);text-shadow:0 -1px 1px rgba(0,0,0,0.25);cursor:pointer}.launchButton:hover{background-color:#111;text-decoration:none}";
+		var css = ".selectedGame td,.selectedGame td:hover{color:#fff !important;background:#84bc3c !important;font-weight:bold}.launchButton{float:right;display:inline-block;position:relative;overflow:visible;width:auto;padding:3px 10px;border-bottom:1px solid rgba(0,0,0,0.25);background:#222;color:#fff !important;font-size:13px;font-weight:bold;line-height:1;text-decoration:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.25);-moz-box-shadow:0 1px 3px rgba(0,0,0,0.25);box-shadow:0 1px 3px rgba(0,0,0,0.25);text-shadow:0 -1px 1px rgba(0,0,0,0.25);cursor:pointer}.launchButton:hover{background-color:#111;text-decoration:none;}.price-discount{color:#fff";
 		var style = document.createElement("style");
 		style.type = "text/css";
 		style.appendChild(document.createTextNode(css));
