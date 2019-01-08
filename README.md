@@ -1,8 +1,9 @@
-#Random Steam Game Bookmarklet
+# [DEFUNCT] Random Steam Game Bookmarklet
 
-*Lets you select a random game to play from your game list (or anyone's) via steamdb.info*
+~*Lets you select a random game to play from your game list (or anyone's) via steamdb.info*~
+Changes to Steam permissions hides games list by default, so this pretty much doesn't work :|
 
-###How to use
+## How to use
 Copy the contents of either bookmarklet.min.js or the code below into the URL field for a new bookmark in your browser.
 
 **Bookmarklet code**
@@ -14,13 +15,13 @@ Once the bookmark has been made, either view your profile under steamdb.info/cal
 
 Note: this will not work if steamdb.info cannot see your profile (set to private).
 
-###Why was this made?
+## Why was this made?
 
 I have way too many games on Steam and in an attempt to play new ones, I would run a random number gen and find the game in my list. 
 That got too tedious so I started manipulating my page on steamdb via the javascript console. At that point I figured why not make it just
 a simple button to click rather than copy in code each time; it kind of evolved from there.
 
-###Features
+## Features
 
 - Lets you enter a steamID if you are too lazy to go to the page before clicking the bookmark.
 - Highlights and scrolls to the game it has just selected for you.
@@ -28,6 +29,6 @@ a simple button to click rather than copy in code each time; it kind of evolved 
 - Bookmarklet calls latest code from here so you never have to worry about updating what you have.
 - Excludes any apps not of type "game" as well as Steam for Linux (Not sure why it's listed as a game)
 
-###Future Updates
+## Future Updates
 
 Unknown at this time, too busy playing games. Feel free to give any suggestions.
